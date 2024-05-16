@@ -1,5 +1,6 @@
 package com.prowings.webclientdemo.config;
 
+import org.springframework.boot.actuate.web.exchanges.InMemoryHttpExchangeRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -14,4 +15,8 @@ public class WebClientConfig {
 		return webClient;
 	}
 
+//	@Bean
+//	public InMemoryHttpExchangeRepository createTraceRepository() {
+//	  return new InMemoryHttpExchangeRepository();
+//	}
 }
